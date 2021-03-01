@@ -2,7 +2,7 @@
 
 Réalisation des fonctionnalités 1 à 6
 
-* Fonctionnalité 1 : lorsque l'utilisateur va cliquer sur le footer (portant le tag <footer>), tu vas afficher le mot "clique" en console.
+* Fonctionnalité 1 : lorsque l'utilisateur va cliquer sur le footer, tu vas afficher le mot "clique" en console.
 
 * Fonctionnalité 1-bis : lorsque l'utilisateur va cliquer sur le footer, tu vas afficher en console "clic numéro x" avec x qui commence à 1 et s'incrémente de +1 à chaque clic.
 
