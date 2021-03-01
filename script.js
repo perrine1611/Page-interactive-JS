@@ -6,7 +6,6 @@ document.getElementsByTagName('footer')[0].addEventListener("click", function(){
 	console.log(`Clic numéro: ${footerCounter}`);
 });
 
-
 // Fonctionnalité n°2 // Hamburger menu - enlever et ajouter classe "collapse"
 
 document.getElementsByClassName("navbar-toggler")[0].addEventListener("click", function(){
@@ -26,21 +25,29 @@ firstCard.getElementsByTagName("button")[1].addEventListener("click", function()
 let secondCard = document.getElementsByClassName('card-body')[1];
 
 secondCard.getElementsByTagName("button")[1].addEventListener("click", function(){
-    secondCard.getElementsByTagName("p")[0].classList.toggle("text-success");
+secondCard.getElementsByTagName("p")[0].classList.toggle("text-success");
   });
 
 // Fonctionnalité n°5 // Double-clic sur la navbar du haut pour désactiver la stylesheet
 
-var nav = document.getElementsByTagName('header')[0];
+let nav = document.getElementsByTagName('header')[0];
 nav.addEventListener("dblclick", RemoveStyle);
 
 function RemoveStyle() {
-  if (document.styleSheets[0].disabled === false) {
+  if (document.styleSheets[0].disabled === false)
     document.styleSheets[0].disabled = true;
-  } 
-  
-  else {
+  else 
       document.styleSheets[0].disabled = false;
+  };
 
-  }
+// Fonctionnalité n°6 // 
+
+let ViewButton = document.getElementsByClassName("btn btn-sm btn-success");
+
+for (let i = 0; i < ViewButton.length; i++){
+
+  ViewButton[i].addEventListener("mouseover", function(){
+  document.getElementsByClassName("card-text")[i].classList.toggle("d-none");
+  document.getElementsByClassName("card-img-top")[i].classList.toggle("w-25");
+  });
 }
